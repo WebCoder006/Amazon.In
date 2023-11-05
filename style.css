@@ -1,0 +1,792 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(247, 247, 255);
+    overflow-x: hidden;
+}
+.nav-bar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+}
+.img-logo{
+    width: 108px;
+    height: 60px;
+    position: relative;
+    top: 3px;
+    left: 15px;
+    cursor: pointer;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+}
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+/* Box 2 */
+.add-first{
+    color: #cccccc;
+    font-size: 0.85rem;
+    position: relative;
+    left: 5.5rem;
+    cursor: pointer;
+}
+.add-second{
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    left: 0.5rem;
+    cursor: pointer;
+}
+.add-icon{
+    position: relative;
+    left: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-add{
+    width: 10vh;
+}
+/* Box 3 */
+.nav-search{
+    margin-left: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 800px;
+    border-radius: 5px;
+
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 55px;
+    text-indent: 0.6rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.search-select option{
+    text-align: start;
+}
+.input-search{
+    width: 350%;
+    font-size: 1rem;
+    border: none;
+    /* NEW CODE FOR TO SLIDE WRITTRN--TEXT ... */
+    text-indent: 0.7rem;
+    cursor: pointer;
+}
+.input-search:hover{
+    border: 3px solid #ffae45;
+}
+.search-icon{
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #ffb34f;
+    cursor: pointer;
+}
+/* BOX 4 */
+.nav-sign-in{
+    position: relative;
+    top: 4px;
+    left: 4rem;
+    cursor: pointer;
+}
+span{
+    font-size: 0.7rem;
+}
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+.nav-return{
+    position: relative;
+    left: 6.65rem;
+    cursor: pointer;
+}
+.nav-return a{
+    color: white;
+    text-decoration: none;
+}
+.i-frame{
+    display: flex;
+    position: relative;
+    left: 5.8rem;
+    top: -0.8rem;
+}
+/* BOX 5 */
+.EN-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.india-flag{
+    height: 1rem;
+    width: 1.4rem;
+    position: relative;
+    left: 2rem;
+}
+.En{
+    position: relative;
+    left: 2.2rem;
+    font-weight: bold;
+}
+.down-arrow{
+    font-weight: bold;
+    margin-left: 2px;
+}
+/* BOX 6 */
+.nav-cart i{
+    position: relative;
+    left: 8.3rem;
+    font-size: 30px;
+    cursor: pointer;
+}
+.nav-cart span{
+    position: relative;
+    left: 8.5rem;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+/* PANEL-OPTION */
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.panel-all{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.panel-options p{
+    display: inline;
+    margin-left: 1.2rem;
+    cursor: pointer;
+}
+.panel-options p a{
+    color: white;
+    text-decoration: none;
+}
+.prime-i{
+    margin-left: 6px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: rgb(187, 187, 187);
+}
+.panel-options{
+    width: 80%;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+.panel-deals{
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+/* Hero Section */
+.hero-section{
+    background-image: url(J23_P3B_PC_NTA_Hero_2x_V1._CB573767479_.jpg);
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+}
+.hero-msg{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    height: 40px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.hero-msg a{
+    color: #007185;
+    cursor: pointer;
+}
+/* SHOP--SECTION */
+.shop-sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: lavender;
+}
+.box{
+    height: 420px;
+    width: 23.5%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 0.4rem;
+    border-radius: 0.6rem;
+}
+.box-img-center{
+    height: 38vh;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.box-content p{
+    color: #007185;
+}
+.box-img-complex{
+    height: 102px;
+    width: 164px;
+    position: relative;
+    top: 5px;
+    background-size: cover;
+}
+.box-img-complex-1{
+    position: relative;
+    left: 10.5rem;
+    bottom: 7.2rem;
+    height: 102px;
+    width: 164px;
+    background-size: cover;
+}
+.box-img-complex-2{
+    position: relative;
+    left: 10.5rem;
+    bottom: 5.8rem;
+    height: 102px;
+    width: 164px;
+    background-size: cover;
+}
+.box-img-complex-3{
+    position: relative;
+    top: -13.4rem;
+    height: 102px;
+    width: 164px;
+    background-size: cover;
+}
+.mens-p{
+    position: relative;
+    top: -7.2rem;
+    left: 10.55rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.sports-p{
+    position: relative;
+    top: 0.3rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.womens-p{
+    position: relative;
+    top: -5.65rem;
+    left: 10.65rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.handbags-p{
+    position: relative;
+    bottom: 13.4rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.para-deals{
+    position: relative;
+    top: -10.7rem;
+}
+/* .para-deals a:hover{
+    color: #007185;
+    text-decoration: none;
+} */
+.para-deals:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+.para-deals-hover:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+/* FOOTER SECTION */
+footer{
+    margin-top: 15px;
+}
+.foot-panel-1{
+    background-color: #37475a;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.foot-panel-1:hover{
+    background-color: #415368;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-panel-1 a{
+    color: white;
+    text-decoration: none;
+}
+.foot-panel-2{
+    background-color: #222f3d;
+    color: white;
+    height: 45vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul a{
+    display: block;
+    font-size: 1rem;
+    margin-top: 0.6rem;
+    font-weight: bold;
+    color: #dddddd;
+    cursor: pointer;
+}
+ul{
+    margin-top: 2rem;
+}
+ul p{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+ul a:hover{
+    text-decoration: underline;
+}
+.border-line{
+    border: 0.5px solid grey;
+    position: relative;
+    top: -7rem;
+}
+.foot-panel-3{
+    background-color: #0e1827;
+    color: white;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LOGO{
+    background-image: url("1622736066_amazon-logo_story.jpg");
+    background-size: cover;
+    width: 180px;
+    height: 80px;
+    cursor: pointer;
+}
+.para{
+    background-color: #0c1c33;
+    color: #dddddd;
+    height: 8vh;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.para-span a{
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.4rem;
+    cursor: pointer;
+}
+.para-span a:hover{
+    text-decoration: underline;
+}
+.foot-panel-4{
+    background-color: #0f1111;
+    color: white;
+    height: 100px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.foot-panel-5{
+    background-color: #0f1111;
+    color: white;
+    padding: 0 20rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+}
+.foot-panel-5 a{
+    background-color: #0f1111;
+    color: #dddddd;
+    font-size: 0.95rem;
+    font-weight: bold;
+    /* padding: -1rem; */
+    cursor: pointer;
+}
+.pages{
+    font-size: 0.9rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+.pages a{
+    padding: 0.5rem;
+}
+.copyright{
+    padding-top: 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #dddddd;
+}
+.box-img-complex-p{
+    height: 102px;
+    width: 160px;
+    position: relative;
+    top: 5px;
+    background-size: cover;
+}
+.box-img-complex-p-1{
+    position: relative;
+    left: 10.5rem;
+    bottom: 7.2rem;
+    height: 102px;
+    width: 160px;
+    background-size: cover;
+}
+.box-img-complex-p-2{
+    position: relative;
+    left: 10.5rem;
+    bottom: 5.8rem;
+    height: 102px;
+    width: 160px;
+    background-size: cover;
+}
+.box-img-complex-p-3{
+    position: relative;
+    top: -13.4rem;
+    height: 102px;
+    width: 160px;
+    background-size: cover;
+}
+.mens-p-p{
+    position: relative;
+    top: -7.2rem;
+    left: 10.55rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.sports-p-p{
+    position: relative;
+    top: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.womens-p-p{
+    position: relative;
+    top: -5.65rem;
+    left: 10.65rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.handbags-p-p{
+    position: relative;
+    bottom: 13.22rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+/* Section Number 2 */
+.collection-of-items{
+    background-color: white;
+    height: 60vh;
+    width: 96%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    /* display: flex; */
+}
+.card-container h1{
+    position: relative;
+    left: 1rem;
+    top: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.card-container span{
+    position: relative;
+    top: 0.1rem;
+    left: 0.6rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #007185;
+    cursor: pointer;
+}
+.card-container span:hover{
+    color: rgb(255, 105, 51);
+    text-decoration: underline;
+}
+.second-hero-sec{
+    background-image: url("P3_Diwali-lights_PC_3000x1200_UNREC_BankStripB._CB573763526_.jpg");
+    background-color: lavender;
+    background-size: cover;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+}
+/* ................................................................ */
+.shop-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    top: 1rem;
+    height: 44vh;
+}
+.boxes{
+    height: 350px;
+    width: 25%;
+    background-color: white;
+    padding: 30px 0px 15px;
+    margin-top: 0.4rem;
+    border-radius: 0.2rem;
+}
+.boxes-img{
+    height: 28vh;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.img-container{
+    height: 35vh;
+    background-size: cover;
+}
+.box-content h3{
+    font-size: 1.25rem;
+}
+/* ................................................................ */
+.second-hero-third{
+    background-image: url("Train_GW_editorial_2300x646._CB575359240_.jpg");
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: lavender;
+    cursor: pointer;
+}
+.sign-up-page{
+    height: 14vh;
+}
+hr{
+    margin: 1px;
+}
+.paragraph p{
+    position: relative;
+    top: 1.5rem;
+    text-align: center;
+    font-size: 0.95rem;
+}
+.Button-sign-in{
+    text-align: center;
+    position: relative;
+    top: 1.7rem;
+    left: 39.65rem;
+    font-weight: bold;
+    height: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 28px;
+    border: 1px solid black;
+    color: black;
+    width: 250px;
+    border-radius: 6px;
+    background-color: #ffc73a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.Button-sign-in a{
+    color: black;
+    text-decoration: none;
+}
+.Start-here-page{
+    position: relative;
+    top: 0.7rem;
+    left: 42.5rem;
+}
+.Start-here-page span{
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #007c92;
+    cursor: pointer;
+}
+.Start-here-page span:hover{
+    color: brown;
+    text-decoration: underline;
+}
+.pages a{
+    color: white;
+    text-decoration: none;
+}
+.pages a:hover{
+    text-decoration: underline;
+}
+/* ............................................................................. */
+/* MEDIA QUERIES */
+@media (max-width:350px) {
+    .shop-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 40vw;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .shop-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .sign-up-page{
+        /* display: flex;
+        flex-direction: column; */
+        width: 30%;
+    }
+    .Button-sign-in{
+        /* width: 30%; */
+        position: relative;
+        left: 5rem;
+    }
+    .Start-here-page{
+        position: relative;
+        left: 7.5rem;
+    }
+    .foot-panel-2{
+        display: flex;
+        flex-direction: column;
+        height: 105vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        position: relative;
+        left: 7.5rem;
+    }
+    .box{
+            height: 420px;
+            width: 100%;
+            background-color: white;
+            padding: 20px 0px 15px;
+            margin-top: 0.4rem;
+            border-radius: 0.6rem;
+            align-items: center;
+    }
+
+    .boxes{
+        height: 350px;
+        width: 100%;
+        background-color: white;
+        padding: 30px 0px 15px;
+        margin-top: 0.4rem;
+        border-radius: 0.2rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .box-content{
+        height: 350px;
+        width: 100%;
+        background-color: white;
+        padding: 30px 0px 15px;
+        margin-top: 0.4rem;
+        border-radius: 0.2rem;
+        justify-content: center;
+        align-items: center;
+        /* display: flex; */
+        flex-direction: column;
+    }
+    .para{
+        height: 70vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .para-span{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-left: -14rem;
+    }
+    .foot-panel-5{
+        height: 80vh;
+        margin-left: -9rem;
+        flex-direction: column;
+    }
+    .foot-panel-5 ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .panel{
+        height: 50vh;
+    }
+    .panel-all{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -12rem;
+        left: 9rem;
+    }
+    .panel-options{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        align-items: center;
+    }
+    .panel-deals{
+        position: relative;
+        top: 12rem;
+        right: 9.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-section{
+        width: 100%;
+        background-size: cover;
+    }
+}
